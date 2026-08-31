@@ -57,28 +57,7 @@ body {
 
 .bio {
   max-width: 60ch;
-  margin: 0 0 28px;
-}
-
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 24px;
-  margin-bottom: 40px;
-}
-
-.contact a {
-  color: var(--ink);
-  text-decoration: none;
-  border-bottom: 1px solid var(--hairline);
-  font-size: 0.95rem;
-  padding-bottom: 1px;
-  transition: border-color 0.15s ease, color 0.15s ease;
-}
-
-.contact a:hover {
-  color: var(--accent);
-  border-color: var(--accent);
+  margin: 0 0 40px;
 }
 
 /* ---- Section nav ---- */
@@ -208,12 +187,25 @@ footer {
   margin-top: 72px;
   padding-top: 24px;
   border-top: 1px solid var(--hairline);
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
   color: var(--muted);
   font-size: 0.85rem;
 }
 
-footer p {
+.footer-name {
   margin: 0;
+}
+
+.footer-contact {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-soft);
+}
+
+.footer-contact:hover {
+  border-color: var(--accent);
 }
 
 /* ---- Mobile ---- */
