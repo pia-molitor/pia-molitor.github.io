@@ -48,9 +48,9 @@ body {
 }
 
 .portrait {
-  width: 128px;
-  height: 128px;
-  border-radius: 4px;
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
   background: var(--hairline);
@@ -245,8 +245,8 @@ footer {
     gap: 20px;
   }
   .portrait {
-    width: 96px;
-    height: 96px;
+    width: 120px;
+    height: 120px;
   }
   .intro h1 {
     font-size: 2.1rem;
