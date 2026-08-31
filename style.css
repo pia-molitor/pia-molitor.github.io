@@ -41,6 +41,26 @@ body {
 
 /* ---- Header ---- */
 
+.intro {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.portrait {
+  width: 128px;
+  height: 128px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--hairline);
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 0;
+}
+
 .intro h1 {
   font-family: var(--serif);
   font-weight: 700;
@@ -210,9 +230,23 @@ footer {
 
 /* ---- Mobile ---- */
 
+.award {
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin: 0 0 12px;
+}
+
 @media (max-width: 480px) {
   .page {
     padding: 56px 20px 48px;
+  }
+  .intro {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .portrait {
+    width: 96px;
+    height: 96px;
   }
   .intro h1 {
     font-size: 2.1rem;
